@@ -8,6 +8,7 @@
         </li>
         <div *ngIf=selectedRecipe>
           <h5>{{selectedRecipe.details}}</h5>
+          <img src={{selectedRecipe.image}} alt="" />
           <button (click)="hideDetails()">Hide</button>
           <button (click)="turnOnEditMode()">Edit</button>
         </div>
